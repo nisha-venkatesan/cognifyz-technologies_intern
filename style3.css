@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F7FA;
+  color: #333333;
+}
+
+header {
+  background-color: #1E2A38;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2, h3 {
+  color: #1E2A38;
+}
+
+.highlights,
+.qualifications,
+.contact-section {
+  background-color: #E6F4FB;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #00AEEF;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.cta-button:hover {
+  background-color: #0095cc;
+}
+
+footer {
+  background-color: #1E2A38;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+

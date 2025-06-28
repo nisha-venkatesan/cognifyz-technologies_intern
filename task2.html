@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cognifyz_Task-2</title>
+  <style>
+    #colorBtn {
+      padding: 10px 20px;
+      background-color: lightblue;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #calculator {
+      margin-top: 20px;
+    }
+
+    input[type="number"] {
+      padding: 5px;
+      margin: 5px;
+    }
+
+    #result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to change color -->
+  <button id="colorBtn" onclick="changeColor()">Click Me</button>
+
+  <!-- Button to show greeting -->
+  <button onclick="showGreeting()">Greet Me</button>
+
+  <!-- Simple Calculator -->
+  <div id="calculator">
+    <h3>Basic Calculator</h3>
+    <input type="number" id="num1" placeholder="Enter number 1">
+    <input type="number" id="num2" placeholder="Enter number 2">
+    <button onclick="addNumbers()">Add</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    // Function to change button color
+    function changeColor() {
+      const btn = document.getElementById("colorBtn");
+      btn.style.backgroundColor = btn.style.backgroundColor === "lightblue" ? "green" : "lightblue";
+    }
+
+    // Function to show greeting
+    function showGreeting() {
+      const hour = new Date().getHours();
+      let greeting;
+
+      if (hour < 12) {
+        greeting = "Good Morning!";
+      } else if (hour < 18) {
+        greeting = "Good Afternoon!";
+      } else {
+        greeting = "Good Evening!";
+      }
+
+      alert(greeting);
+    }
+
+    // Function to add numbers
+    function addNumbers() {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+      const sum = num1 + num2;
+
+      document.getElementById("result").textContent = "Result: " + sum;
+    }
+  </script>
+
+</body>
+</html>
